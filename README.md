@@ -1,4 +1,4 @@
-# -EXP-3-Record-Histogram-processing
+# EXP-3-Record-Histogram-processing
 
 # Histogram-of-an-images
 
