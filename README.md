@@ -32,16 +32,16 @@ Plot and display the histograms of the grayscale image and color image.
 
 ## Program
 
-**Developed By:** SHRIVARSHAN P G
+**Developed By:** DAKSHA C
 
-**Register Number:** 212225240146
+**Register Number:** 212224230048
 
 ```python
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv2.imread('sv.jpeg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('my_photo.jpg', cv2.IMREAD_GRAYSCALE)
 
 plt.imshow(img, cmap='gray')
 plt.title('Original Image')
@@ -60,7 +60,7 @@ plt.imshow(img_eq, cmap='gray')
 plt.title('Original Image')
 plt.show()
 
-img = cv2.imread('sv.jpeg', cv2.IMREAD_COLOR)
+img = cv2.imread('my_photo.jpg', cv2.IMREAD_COLOR)
 img_hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 img_hsv[:,:,2] = cv2.equalizeHist(img_hsv[:, :, 2])
 img_eq = cv2.cvtColor(img_hsv, cv2.COLOR_HSV2BGR)
@@ -82,35 +82,42 @@ plt.subplot(122); plt.hist(img_eq.ravel(),256,range = [0, 256]); plt.title('Hist
 
 ### Input Grayscale Image
 
-<img width="738" height="440" alt="image" src="https://github.com/user-attachments/assets/ed226899-4207-4a67-8486-ab02c146881f" />
+<img width="337" height="485" alt="Screenshot 2026-10-31 105720" src="https://github.com/user-attachments/assets/4855c467-4633-47e0-8ce0-2d838fa71b3f" />
+
 
 ### Input Grayscale Image Range
-<img width="877" height="536" alt="image" src="https://github.com/user-attachments/assets/c665c472-3488-40e3-a800-15a724be41a7" />
+<img width="697" height="493" alt="Screenshot 2026-10-31 105729" src="https://github.com/user-attachments/assets/72c46408-b61e-4550-a0fa-8f3f1f359ba4" />
+
 
 ### Input Grayscale Image Equalized Histogram
-<img width="846" height="535" alt="image" src="https://github.com/user-attachments/assets/20f0460e-f2ca-432a-afa8-0d7da62750c3" />
+<img width="697" height="505" alt="Screenshot 2026-10-31 105733" src="https://github.com/user-attachments/assets/3a8651d9-64e9-4a30-ace4-ec8c0b699721" />
+
 
 
 ### Histogram of Grayscale Image and Color Image Channels
 
 ### Original Image
+<img width="342" height="488" alt="Screenshot 2026-10-31 105738" src="https://github.com/user-attachments/assets/3fdb46be-f23d-474a-bab9-023ce0d707a9" />
 
-<img width="775" height="467" alt="image" src="https://github.com/user-attachments/assets/c74ea9af-b263-420d-8e39-ae3a06dc1f9a" />
 
 ### Equalized Image
+<img width="367" height="497" alt="Screenshot 2026-10-31 105743" src="https://github.com/user-attachments/assets/06a2efeb-2e96-4a4a-ac0a-664230155275" />
 
-<img width="740" height="441" alt="image" src="https://github.com/user-attachments/assets/cff11798-aa29-4a1f-adb2-ecd245f9d202" />
+
 
 ### Equalized Histogram
-<img width="845" height="548" alt="image" src="https://github.com/user-attachments/assets/c37fbf0f-a3b0-4c80-b36c-ccba7f02dd8d" />
+<img width="707" height="486" alt="Screenshot 2026-10-31 105747" src="https://github.com/user-attachments/assets/15f2b5da-9b0b-42ef-ba11-7cd3ec0dc0ae" />
+
 
 ### Final Output of Original Image and Equalized 
-<img width="1397" height="390" alt="image" src="https://github.com/user-attachments/assets/a9d8ba05-ec07-4198-94cf-752ab29c1657" />
+
+<img width="1132" height="421" alt="Screenshot 2026-10-31 105753" src="https://github.com/user-attachments/assets/da1b27bb-a157-41f8-b79e-7bbe2fa26c51" />
 
 
 ### Final Output of Original Image and its Histogram Equalized
-<img width="1428" height="437" alt="image" src="https://github.com/user-attachments/assets/46d7ed22-d3f6-4f4e-bfc8-8ec26c4ef899" />
 
+
+<img width="1143" height="332" alt="Screenshot 2026-10-31 105758" src="https://github.com/user-attachments/assets/da8644fd-b34a-429a-a093-b6ce96a1f33c" />
 
 ## Result
 
